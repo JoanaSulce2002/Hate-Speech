@@ -83,7 +83,7 @@ plt.rcParams.update({
 
 
 def upload_and_load_dataset():
-    """Handle file upload in Google Colab and load dataset"""
+    
     try:
         from google.colab import files
         print("Please upload your dataset file (CSV format)...")
@@ -124,7 +124,7 @@ def upload_and_load_dataset():
         return df, DATASET_PATH
 
 def preprocess_dataframe(df):
-    """Preprocess the dataframe to extract text and label columns"""
+    
     print(f"Original columns: {df.columns.tolist()}")
     print(f"Dataset shape: {df.shape}")
 
@@ -207,7 +207,7 @@ class InformationTheoreticMeasures:
 
     @staticmethod
     def shannon_entropy(text: str, base: int = 2) -> float:
-        """Calculate Shannon entropy of text"""
+       
         if len(text) == 0:
             return 0.0
 
